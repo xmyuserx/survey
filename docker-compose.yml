@@ -1,12 +1,28 @@
 version: '3.5'
 services:
-  exjex-db:
+  survey-db:
     container_name: survey-db
     image: postgres
     restart: unless-stopped
     ports:
-      - 5432:5432
+      - "5432:5432"
     environment:
       - "POSTGRES_DB=survey"
       - "POSTGRES_USER=pilot"
       - "POSTGRES_PASSWORD=pilot"
+    volumes:
+      - "survey-data:/var/lib/postgresql/data"
+
+  survey-api:
+    container_name: survey-api
+    build: .
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+volumes:
+  survey-data:
+
+networks:
+  default:
+      name: survey_network
