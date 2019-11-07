@@ -1,0 +1,95 @@
+databaseChangeLog:
+  - changeSet:
+      id: 4
+      author: indamail88
+      changes:
+        - insert:
+            tableName: surveys
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: name
+                  value: "Employee Engagement Survey"
+              - column:
+                  name: active_from
+                  value: "2019-11-01 01:54:27.114000"
+              - column:
+                  name: active_to
+                  value: "2019-12-01 01:54:27.114000"
+              - column:
+                  name: is_active
+                  value: "true"
+        - insert:
+            tableName: surveys
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: name
+                  value: "A Letter To Santa"
+              - column:
+                  name: active_from
+                  value: "2019-11-01 01:54:27.114000"
+              - column:
+                  name: active_to
+                  value: "2019-12-01 01:54:27.114000"
+              - column:
+                  name: is_active
+                  value: "false"
+        - insert:
+            tableName: surveys
+            columns:
+              - column:
+                  name: id
+                  value: 3
+              - column:
+                  name: name
+                  value: "Event Lead Capture"
+              - column:
+                  name: active_from
+                  value: "2019-11-01 01:54:27.114000"
+              - column:
+                  name: active_to
+                  value: "2019-11-04 01:54:27.114000"
+              - column:
+                  name: is_active
+                  value: "false"
+        - insert:
+            tableName: surveys
+            columns:
+              - column:
+                  name: id
+                  value: 4
+              - column:
+                  name: name
+                  value: "Market Research Survey"
+              - column:
+                  name: active_from
+                  value: "2019-11-01 01:54:27.114000"
+              - column:
+                  name: active_to
+                  value: "2019-12-01 01:54:27.114000"
+              - column:
+                  name: is_active
+                  value: "true"
+        - insert:
+            tableName: surveys
+            columns:
+              - column:
+                  name: id
+                  value: 5
+              - column:
+                  name: name
+                  value: "Activity Log"
+              - column:
+                  name: active_from
+                  value: "2019-11-01 01:54:27.114000"
+              - column:
+                  name: active_to
+                  value: "2020-12-01 01:54:27.114000"
+              - column:
+                  name: is_active
+                  value: "true"

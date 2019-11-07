@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+  exjex-db:
+    container_name: survey-db
+    image: postgres
+    restart: unless-stopped
+    ports:
+      - 5432:5432
+    environment:
+      - "POSTGRES_DB=survey"
+      - "POSTGRES_USER=pilot"
+      - "POSTGRES_PASSWORD=pilot"

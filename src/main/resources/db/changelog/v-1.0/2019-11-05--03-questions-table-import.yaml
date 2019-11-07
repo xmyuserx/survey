@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: indamail88
+      changes:
+        - createTable:
+            tableName: questions
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: survey_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_questions_surveys
+                    references: surveys(id)
+              - column:
+                  name: text
+                  type: varchar(512)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: position
+                  type: int
+                  constraints:
+                    nullable: false

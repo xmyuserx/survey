@@ -1,0 +1,11 @@
+databaseChangeLog:
+    - include:
+        file: db/changelog/v-1.0/2019-11-05--01-sequence-generator.yaml
+    - include:
+        file: db/changelog/v-1.0/2019-11-05--02-surveys-table-import.yaml
+    - include:
+        file: db/changelog/v-1.0/2019-11-05--03-questions-table-import.yaml
+    - include:
+        file: db/changelog/v-1.0/2019-11-05--04-surveys-table-data-insert.yaml
+    - include:
+        file: db/changelog/v-1.0/2019-11-05--05-questions-table-data-insert.yaml

@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: indamail88
+      changes:
+        - createTable:
+            tableName: surveys
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(256)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: active_from
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: active_to
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: is_active
+                  type: boolean
+                  constraints:
+                    nullable: false

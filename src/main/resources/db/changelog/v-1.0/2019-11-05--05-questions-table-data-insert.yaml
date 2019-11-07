@@ -1,0 +1,185 @@
+databaseChangeLog:
+  - changeSet:
+      id: 5
+      author: indamail88
+      changes:
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: survey_id
+                  value: 1
+              - column:
+                  name: text
+                  value: "How do you feel when you come into work?"
+              - column:
+                  name: position
+                  value: 1
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: survey_id
+                  value: 1
+              - column:
+                  name: text
+                  value: "Would you recommend working here to your friends?"
+              - column:
+                  name: position
+                  value: 2
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: survey_id
+                  value: 1
+              - column:
+                  name: text
+                  value: "Do you know our company's mission inside out?"
+              - column:
+                  name: position
+                  value: 3
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: survey_id
+                  value: 2
+              - column:
+                  name: text
+                  value: "So, how have you behaved this year?"
+              - column:
+                  name: position
+                  value: 1
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: survey_id
+                  value: 2
+              - column:
+                  name: text
+                  value: "Which of the following things do you like the most?"
+              - column:
+                  name: position
+                  value: 2
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: survey_id
+                  value: 2
+              - column:
+                  name: text
+                  value: "Good stuff! So what exactly do you want?"
+              - column:
+                  name: position
+                  value: 3
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: survey_id
+                  value: 3
+              - column:
+                  name: text
+                  value: "First up, what's your name?"
+              - column:
+                  name: position
+                  value: 1
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: survey_id
+                  value: 3
+              - column:
+                  name: text
+                  value: "Great! Now what company are you from?"
+              - column:
+                  name: position
+                  value: 2
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: survey_id
+                  value: 3
+              - column:
+                  name: text
+                  value: "Just a couple more questions left! What's your email address?"
+              - column:
+                  name: position
+                  value: 3
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: survey_id
+                  value: 4
+              - column:
+                  name: text
+                  value: "How often do you use beachwear products?"
+              - column:
+                  name: position
+                  value: 1
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: survey_id
+                  value: 4
+              - column:
+                  name: text
+                  value: "When did you last buy a beachwear product?"
+              - column:
+                  name: position
+                  value: 2
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: survey_id
+                  value: 4
+              - column:
+                  name: text
+                  value: "What appeals to you most about the Sun Seat?"
+              - column:
+                  name: position
+                  value: 3
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: survey_id
+                  value: 5
+              - column:
+                  name: text
+                  value: "So, what store are you reporting from?"
+              - column:
+                  name: position
+                  value: 1
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: survey_id
+                  value: 5
+              - column:
+                  name: text
+                  value: "And what day is it?"
+              - column:
+                  name: position
+                  value: 2
+        - insert:
+            tableName: questions
+            columns:
+              - column:
+                  name: survey_id
+                  value: 5
+              - column:
+                  name: text
+                  value: "Great. Now, how many items did you sell today?"
+              - column:
+                  name: position
+                  value: 3

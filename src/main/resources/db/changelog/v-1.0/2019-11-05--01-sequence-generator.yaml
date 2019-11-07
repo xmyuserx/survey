@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: indamail88
+      changes:
+        - createSequence:
+            sequenceName: general_sq
+            startValue: 1000
