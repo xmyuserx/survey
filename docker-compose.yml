@@ -3,9 +3,9 @@ services:
   survey-db:
     container_name: survey-db
     image: postgres
-    restart: unless-stopped
+    restart: "no"
     ports:
-      - "5432:5432"
+      - "15432:5432"
     environment:
       - "POSTGRES_DB=survey"
       - "POSTGRES_USER=pilot"
@@ -15,10 +15,12 @@ services:
 
   survey-api:
     container_name: survey-api
+    depends_on:
+      - survey-db
     build: .
     ports:
       - "8080:8080"
-    restart: unless-stopped
+    restart: "no"
 
 volumes:
   survey-data:

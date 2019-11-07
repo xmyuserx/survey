@@ -1,20 +1,20 @@
-##### Клонирование репозитория:
+##### клонирование репозитория:
 
 ```bash
 $ git clone https://github.com/xmyuserx/survey.git
 ```
 
-##### Переход в проект:
+##### переход в проект:
 ```bash
 $ cd survey
 ```
 
-##### Сборка проекта:
+##### сборка проекта:
 ```bash
 $ docker-compose up -d --build
 ```
 
-*Endpoint*: __http://localhost:8080/__
+*swagger*: __http://localhost:8080/swagger-ui.html__
 
 
 
